@@ -8,7 +8,7 @@ import Formulario from './components/Formulario';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Formulario />
+   
     <Variables />
    
   </React.StrictMode>

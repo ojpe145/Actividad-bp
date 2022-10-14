@@ -136,7 +136,7 @@ import { collection, addDoc, deleteDoc, doc, onSnapshot, updateDoc } from 'fireb
                       {
                           listaFrutas.map(item => (
                               <li className="list-group-item" key={item.id}>
-                                  <span className='lead'>{item.nombreFruta}-{item.nombreDescripcion}</span>
+                                  <span className='lead'>{item.nombreFruta}-{item.nombreDescripcion}-{item.nombreUsuario}-{item.apellidoUsuario}-{item.ciudadUsuario}-{item.departamentoUsuario}-{item.edadUsuario}</span>
                                   <button className="btn btn-danger btn-sm float-end mx-2" 
                                   onClick={()=> eliminar(item.id)}> Eliminar</button>
                                   <button className="btn btn-warning btn-sm float-end"
@@ -180,19 +180,19 @@ import { collection, addDoc, deleteDoc, doc, onSnapshot, updateDoc } from 'fireb
                       />
                       <input type="text" 
                       className="form-control mb-2"
-                      placeholder='Ingrese Nombre'
+                      placeholder='Ingrese Ciudad'
                       value = {Ciudad}
                       onChange={(e)=>setCiudad(e.target.value)}
                       />
                       <input type="text" 
                       className="form-control mb-2"
-                      placeholder='Ingrese Nombre'
+                      placeholder='Ingrese Departamento'
                       value = {Departamento}
                       onChange={(e)=>setDepartamento(e.target.value)}
                       />
                       <input type="text" 
                       className="form-control mb-2"
-                      placeholder='Ingrese Nombre'
+                      placeholder='Ingrese Edad'
                       value = {Edad}
                       onChange={(e)=>setEdad(e.target.value)}
                       />
